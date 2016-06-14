@@ -1,14 +1,18 @@
 package com.algorithms;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
+import com.algorithms.exception.InvalidListException;
+@RunWith(JUnit4.class)
 public class HellTriangleTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 
+	private HellTriangle hellTriangle = new HellTriangle();
+	
+	@Test(expected=InvalidListException.class)
+	public void maximumTotal_whenParameterIsNull_shouldExpectedInvalidListException() {
+		hellTriangle.maximumTotal(null);
+	}
 }
