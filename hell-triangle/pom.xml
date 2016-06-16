@@ -6,7 +6,7 @@
 	<groupId>com.algorithms</groupId>
 	<artifactId>hell-triangle</artifactId>
 	<version>1.0.0-RELEASE</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 	<name>hell-triangle</name>
 
 	<properties>
